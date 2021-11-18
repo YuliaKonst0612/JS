@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Информация о студентах</title>
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+<form  method="post" id = "form">
+    <fieldset>
+        <legend><p><Strong>Форма добавления информации о студенте</Strong></p></legend>
+        <p><strong>Имя студента</strong>
+            <input name="Имя студента" id = "First_name">
+            <br>
+        <p><strong>Дата рождения</strong>
+            <input type="date" name="Дата рождения" id = "date"></p>
+        <p><strong>Пол</strong>
+            <select name="Пол" id = "select">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский" selected>Женский</option>
+        </select> <br>
+        <br>
+        <input type="button" value="Отправить" onclick="addRow()"></p>
+    </fieldset>
+</form>
+
+<table ID = "tableA" width="100%" border="1" cellpadding="2">
+
+    <caption><Strong>Таблица студентов</Strong></caption>
+
+        <tr>
+            <th>Имя студента</th>
+            <th>Пол</th>
+            <th>Дата рождения</th>
+            <th>Возраст</th>
+        </tr>
+    <tr id="row"></tr>
+    <tr>
+    <td colspan="4" style="text-align:left">Средний возраст студентов:</td>
+        <td class = "age"> </td>
+    </tr>
+    </table>
+</body>
+</html>
